@@ -20,3 +20,16 @@ body {
   left: 0;
   z-index: 0;
 }
+
+.glassWrapper {
+  background: radial-gradient(
+    118.58% 324.7% at -8.7% -10.37%,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 17px 21px 36px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 45px;
+}

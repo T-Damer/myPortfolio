@@ -1,12 +1,6 @@
 import { FC } from 'react'
-import { gradientText, glassWrapper } from 'components/Text'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-
-// Pages imports
-import Code from 'pages/code'
-import Design from 'pages/design'
-import Photos from 'pages/photos'
-import Smm from 'pages/smm'
+import { gradientText } from 'components/Text'
+import Root from 'components/Root'
 
 type NavBarProps = {
   href: string
@@ -14,12 +8,12 @@ type NavBarProps = {
 
 const NavBar: FC<NavBarProps> = ({ href, children }) => {
   return (
-    <nav className={glassWrapper}>
-      <div className="flex">
+    <nav className="glassWrapper">
+      <div className="flex items-center flex-row justify-center">
         <a href={href} className={gradientText}>
           T.DaM∑R Portfolio
         </a>
-        <ul className="flex items-end	space-x-2 text-white">{children}</ul>
+        <ul className="flex	space-x-2 text-white">{children}</ul>
       </div>
     </nav>
   )
@@ -44,7 +38,7 @@ const NavItem: FC<NavItemProps> = ({ href, isActive, children }) => {
 
 export const Nav: FC = () => {
   return (
-    <Router>
+    <Root>
       <NavBar href="/">
         <NavItem href="/smm" isActive={true}>
           Smm
@@ -59,21 +53,6 @@ export const Nav: FC = () => {
           Photos
         </NavItem>
       </NavBar>
-
-      <Switch>
-        <Route path="/Smm">
-          <Smm />
-        </Route>
-        <Route path="/Smm">
-          <Design />
-        </Route>
-        <Route path="/Smm">
-          <Code />
-        </Route>
-        <Route path="/Smm">
-          <Photos />
-        </Route>
-      </Switch>
-    </Router>
+    </Root>
   )
 }

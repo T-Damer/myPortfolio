@@ -1,12 +1,6 @@
 import { FC } from 'react'
-import { gradientText, glassWrapper } from 'components/Text'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-
-// Pages imports
-import Code from 'pages/code'
-import Design from 'pages/design'
-import Photos from 'pages/photos'
-import Smm from 'pages/smm'
+import { greyGradientText } from 'components/Text'
+import Root from 'components/Root'
 
 type FooterBarProps = {
   href: string
@@ -14,36 +8,39 @@ type FooterBarProps = {
 
 const FooterBar: FC<FooterBarProps> = ({ href, children }) => {
   return (
-    <nav className={glassWrapper}>
-      <div className="flex">
-        <a href={href} className={gradientText}>
-          T.DaM∑R Portfolio
+    <nav className="glassWrapper">
+      <div className="flex items-center justify-center">
+        <a href={href} className={greyGradientText}>
+          <p className="text-center">Copyright &copy;</p>
+          <p>2021 T.DaM∑R Portfolio</p>
         </a>
-        <ul className="flex items-end	space-x-2 text-white">{children}</ul>
+        <ul className="flex space-x-2 text-white">{children}</ul>
       </div>
     </nav>
   )
 }
 
+type FooterItemProps = FooterBarProps
+
+const FooterItem: FC<FooterItemProps> = ({ href, children }) => {
+  return (
+    <li>
+      <a href={href} className={`block px-4 py-2 rounded-md`}>
+        {children}
+      </a>
+    </li>
+  )
+}
+
 export const Footer: FC = () => {
   return (
-    <Router>
-      <FooterBar href="/"></FooterBar>
-
-      <Switch>
-        <Route path="/Smm">
-          <Smm />
-        </Route>
-        <Route path="/Smm">
-          <Design />
-        </Route>
-        <Route path="/Smm">
-          <Code />
-        </Route>
-        <Route path="/Smm">
-          <Photos />
-        </Route>
-      </Switch>
-    </Router>
+    <Root>
+      <FooterBar href="/">
+        <FooterItem href="/Smm">Smm</FooterItem>
+        <FooterItem href="/Design">Design</FooterItem>
+        <FooterItem href="/Code">Code</FooterItem>
+        <FooterItem href="/Photos">Photos</FooterItem>
+      </FooterBar>
+    </Root>
   )
 }

@@ -3,17 +3,6 @@ import { classnames } from 'classnames/tailwind'
 
 const whiteText = classnames('text-white')
 const grayText = classnames('text-gray-300')
-export const glassWrapper = classnames(
-  'border-solid',
-  'border-2',
-  'border-opacity-30',
-  'border-white',
-  'box-border',
-  'shadow-lg',
-  'rounded-lg',
-  'backdrop-blur',
-  'text-white'
-)
 
 export const gradientText = classnames(
   'block',
@@ -25,6 +14,19 @@ export const gradientText = classnames(
   'bg-gradient-to-l',
   'from-pink-500',
   'to-yellow-500',
+  'hover:from-yellow-500'
+)
+
+export const greyGradientText = classnames(
+  'block',
+  'font-bold',
+  'px-4',
+  'py-2',
+  'bg-clip-text',
+  'text-transparent',
+  'bg-gradient-to-l',
+  'from-black-background',
+  'to-white',
   'hover:from-yellow-500'
 )
 

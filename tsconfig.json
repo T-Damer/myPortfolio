@@ -17,5 +17,5 @@
     "jsx": "react-jsx",
     "baseUrl": "src"
   },
-  "include": ["src"]
+  "include": ["src", "src/helpers/particles.min.js", "src/helpers/particles.min.js"]
 }

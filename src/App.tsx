@@ -1,5 +1,6 @@
 import Root from 'components/Root'
 import { Nav } from 'components/Nav'
+import { Footer } from 'components/Footer'
 import IntlProvider from 'i18n/IntlProvider'
 import { configure } from 'mobx'
 
@@ -15,6 +16,7 @@ const App = () => {
       <IntlProvider>
         <Nav />
         <Home />
+        <Footer />
       </IntlProvider>
     </Root>
   )
