@@ -1,10 +1,10 @@
 import Root from 'components/Root'
-import { Nav } from 'components/Nav'
+import { Nav } from 'components/Header'
 import { Footer } from 'components/Footer'
 import IntlProvider from 'i18n/IntlProvider'
 import { configure } from 'mobx'
 
-import Home from 'pages/home'
+import Body from 'pages/home'
 
 configure({
   enforceActions: 'never',
@@ -15,7 +15,7 @@ const App = () => {
     <Root>
       <IntlProvider>
         <Nav />
-        <Home />
+        <Body />
         <Footer />
       </IntlProvider>
     </Root>

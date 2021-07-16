@@ -1,6 +1,5 @@
 import { FC } from 'react'
 import { greyGradientText } from 'components/Text'
-import Root from 'components/Root'
 
 type FooterBarProps = {
   href: string
@@ -8,15 +7,21 @@ type FooterBarProps = {
 
 const FooterBar: FC<FooterBarProps> = ({ href, children }) => {
   return (
-    <nav className="glassWrapper">
-      <div className="flex items-center justify-center">
-        <a href={href} className={greyGradientText}>
-          <p className="text-center">Copyright &copy;</p>
-          <p>2021 T.DaM∑R Portfolio</p>
-        </a>
-        <ul className="flex space-x-2 text-white">{children}</ul>
+    <footer className="bottomwrapper">
+      <div className="flex flex-row flex-grow items-center justify-center py-2">
+        <div className="flex flex-col flex-grow justify-center items-end">
+          <a href={href} className={`${greyGradientText} text-xl`}>
+            <p className="text-center">Copyright &copy;</p>
+            <p>2021 T.DaM∑R Portfolio</p>
+          </a>
+        </div>
+        <div>
+          <ul className="flex flex-col flex-grow justify-center space-y-2 text-white">
+            {children}
+          </ul>
+        </div>
       </div>
-    </nav>
+    </footer>
   )
 }
 
@@ -25,7 +30,7 @@ type FooterItemProps = FooterBarProps
 const FooterItem: FC<FooterItemProps> = ({ href, children }) => {
   return (
     <li>
-      <a href={href} className={`block px-4 py-2 rounded-md`}>
+      <a href={href} className={`block py-4`}>
         {children}
       </a>
     </li>
@@ -34,13 +39,11 @@ const FooterItem: FC<FooterItemProps> = ({ href, children }) => {
 
 export const Footer: FC = () => {
   return (
-    <Root>
-      <FooterBar href="/">
-        <FooterItem href="/Smm">Smm</FooterItem>
-        <FooterItem href="/Design">Design</FooterItem>
-        <FooterItem href="/Code">Code</FooterItem>
-        <FooterItem href="/Photos">Photos</FooterItem>
-      </FooterBar>
-    </Root>
+    <FooterBar href="/">
+      <FooterItem href="/Smm">Smm</FooterItem>
+      <FooterItem href="/Design">Design</FooterItem>
+      <FooterItem href="/Code">Code</FooterItem>
+      <FooterItem href="/Photos">Photos</FooterItem>
+    </FooterBar>
   )
 }

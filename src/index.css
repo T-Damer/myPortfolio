@@ -6,6 +6,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1.3rem;
 }
 
 html,
@@ -13,6 +14,12 @@ body {
   margin: 0;
   padding: 0;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .background {
   position: absolute;
   display: block;
@@ -22,6 +29,11 @@ body {
 }
 
 .glassWrapper {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  width: 65%;
+  padding: 1rem;
   background: radial-gradient(
     118.58% 324.7% at -8.7% -10.37%,
     rgba(255, 255, 255, 0.3) 0%,
@@ -31,5 +43,26 @@ body {
   box-shadow: 17px 21px 36px 4px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(4px);
   /* Note: backdrop-filter has minimal browser support */
-  border-radius: 45px;
+  border-radius: 2rem;
+}
+
+/* @media (min-width: 768px) {
+  width: 90%;
+} */
+
+.bottomwrapper {
+  display: flex;
+  align-items: center;
+  width: 65%;
+  background: radial-gradient(
+    118.58% 324.7% at -8.7% -10.37%,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 17px 21px 36px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 2rem 2rem 0px 0px;
+  padding: 2rem 0rem;
 }

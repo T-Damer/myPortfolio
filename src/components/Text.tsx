@@ -1,27 +1,25 @@
 import { FC } from 'react'
 import { classnames } from 'classnames/tailwind'
 
-const whiteText = classnames('text-white')
+const whiteText = classnames('text-white', 'text-base')
 const grayText = classnames('text-gray-300')
 
 export const gradientText = classnames(
-  'block',
+  'flex',
+  'font-mono',
   'font-bold',
-  'px-4',
-  'py-2',
   'bg-clip-text',
   'text-transparent',
   'bg-gradient-to-l',
-  'from-pink-500',
-  'to-yellow-500',
-  'hover:from-yellow-500'
+  'from-yellow-500',
+  'to-yellow-100',
+  'hover:from-yellow-100'
 )
 
 export const greyGradientText = classnames(
   'block',
+  'font-mono',
   'font-bold',
-  'px-4',
-  'py-2',
   'bg-clip-text',
   'text-transparent',
   'bg-gradient-to-l',
@@ -38,6 +36,7 @@ const headerText = classnames(
   'text-center',
   'mb-6'
 )
+
 export const HeaderText: FC = ({ children }) => {
   return <p className={headerText}>{children}</p>
 }
@@ -50,6 +49,7 @@ const subheaderText = classnames(
   'text-center',
   'my-12'
 )
+
 export const SubheaderText: FC = ({ children }) => {
   return <p className={subheaderText}>{children}</p>
 }
