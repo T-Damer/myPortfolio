@@ -6,13 +6,15 @@ const grayText = classnames('text-gray-300')
 
 export const gradientText = classnames(
   'flex',
-  'font-mono',
+  'font-sans',
+  'text-xl',
+  'md:text-2xl',
   'font-bold',
   'bg-clip-text',
   'text-transparent',
   'bg-gradient-to-l',
-  'from-yellow-500',
-  'to-yellow-100',
+  'from-yellow-700',
+  'to-yellow-300',
   'hover:from-yellow-100'
 )
 

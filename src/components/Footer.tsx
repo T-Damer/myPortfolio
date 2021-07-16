@@ -8,14 +8,14 @@ type FooterBarProps = {
 const FooterBar: FC<FooterBarProps> = ({ href, children }) => {
   return (
     <footer className="bottomwrapper">
-      <div className="flex flex-row flex-grow items-center justify-center py-2">
-        <div className="flex flex-col flex-grow justify-center items-end">
+      <div className="flex flex-row flex-grow items-center justify-center py-2 px-10 md:divide-x-4 md:divide-grey-500">
+        <div className="flex flex-col flex-grow items-end justify-center px-10">
+          <p className="text-center text-white my-5">Copyright &copy; 2021</p>
           <a href={href} className={`${greyGradientText} text-xl`}>
-            <p className="text-center">Copyright &copy;</p>
-            <p>2021 T.DaM∑R Portfolio</p>
+            <p>T.DaM∑R Portfolio</p>
           </a>
         </div>
-        <div>
+        <div className="flex flex-grow justify-center items-start px-10">
           <ul className="flex flex-col flex-grow justify-center space-y-2 text-white">
             {children}
           </ul>
@@ -30,7 +30,7 @@ type FooterItemProps = FooterBarProps
 const FooterItem: FC<FooterItemProps> = ({ href, children }) => {
   return (
     <li>
-      <a href={href} className={`block py-4`}>
+      <a href={href} className={`py-4`}>
         {children}
       </a>
     </li>

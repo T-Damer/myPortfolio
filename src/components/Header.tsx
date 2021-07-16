@@ -8,13 +8,13 @@ type NavBarProps = {
 const NavBar: FC<NavBarProps> = ({ href, children }) => {
   return (
     <nav className="glassWrapper">
-      <div className="justify-start p-5">
+      <div className="justify-start px-10">
         <a href={href} className={gradientText}>
           T.DaM∑R Portfolio
         </a>
       </div>
-      <div className="justify-end">
-        <ul className="flex	flex-row items-center space-x-5 text-white">
+      <div className="flex-grow">
+        <ul className="flex flex-row items-center justify-end space-x-10 px-10 text-white">
           {children}
         </ul>
       </div>

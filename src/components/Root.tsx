@@ -7,7 +7,7 @@ const root = classnames(
   'space-y-6',
   'justify-center',
   'items-center',
-  'p-4',
+  'pt-4',
   'mx-auto',
   'max-w-full'
 )

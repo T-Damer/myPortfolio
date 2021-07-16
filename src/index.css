@@ -29,6 +29,7 @@ img {
 }
 
 .glassWrapper {
+  /* Always specify flex-direction and justify-content */
   display: flex;
   flex-grow: 1;
   align-items: center;
@@ -46,9 +47,9 @@ img {
   border-radius: 2rem;
 }
 
-/* @media (min-width: 768px) {
-  width: 90%;
-} */
+.glassWrapper div {
+  width: 100%;
+}
 
 .bottomwrapper {
   display: flex;
