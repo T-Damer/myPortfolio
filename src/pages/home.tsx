@@ -6,8 +6,7 @@ export default function Body() {
     <div
       className="flex
     flex-grow
-    items-center;
-    w-8/12	
+    items-center
     p-1 flex-col space-y-6"
     >
       <div className="glassWrapper flex-col md:flex-row">
