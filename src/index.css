@@ -33,7 +33,7 @@ img {
   display: flex;
   flex-grow: 1;
   align-items: center;
-  width: 65%;
+  width: 55%;
   padding: 1rem;
   background: radial-gradient(
     118.58% 324.7% at -8.7% -10.37%,
@@ -54,7 +54,7 @@ img {
 .bottomwrapper {
   display: flex;
   align-items: center;
-  width: 65%;
+  width: 55%;
   background: radial-gradient(
     118.58% 324.7% at -8.7% -10.37%,
     rgba(255, 255, 255, 0.3) 0%,
