@@ -10,7 +10,9 @@ const FooterBar: FC<FooterBarProps> = ({ href, children }) => {
     <footer className="bottomwrapper">
       <div className="flex flex-row flex-grow items-center justify-center py-2 px-10 md:divide-x-4 md:divide-grey-500">
         <div className="flex flex-col flex-grow items-end justify-center px-10">
-          <p className="text-center text-white my-5">Copyright &copy; 2021</p>
+          <a href="/copyright">
+            <p className="text-center text-white my-5">Copyright &copy; 2021</p>
+          </a>
           <a href={href} className={`${greyGradientText} text-xl`}>
             <p>T.DaM∑R Portfolio</p>
           </a>

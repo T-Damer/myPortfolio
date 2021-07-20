@@ -1,12 +1,6 @@
 import { FC } from 'react'
 import { gradientText } from 'components/Text'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  NavLink,
-} from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 type NavBarProps = {
   href: string
@@ -18,7 +12,7 @@ const NavBar: FC<NavBarProps> = ({ href, children }) => {
       <nav className="glassWrapper w-8/12">
         <div className="justify-start px-10">
           <a href={href} className={gradientText}>
-            <Link to="/">T.DaM∑R Portfolio</Link>
+            T.DaM∑R Portfolio
           </a>
         </div>
         <div className="flex-grow">
