@@ -11,7 +11,9 @@ export default function CopyrightPage() {
       <div className="glassWrapper flex-col justify-start space-y-6 text-white">
         <h2 className={gradientText}>
           Copyright 2021 |
-          <a href="https://github.com/T-Damer"> Daniil Pankov </a>
+          <a href="https://github.com/T-Damer" className="font-bold">
+            Daniil Pankov
+          </a>
         </h2>
         <p className="p-3">
           Permission is hereby granted, free of charge, to any person obtaining
