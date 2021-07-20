@@ -25,9 +25,7 @@ const FooterBar: FC<FooterBarProps> = ({ href, children }) => {
   )
 }
 
-type FooterItemProps = FooterBarProps
-
-const FooterItem: FC<FooterItemProps> = ({ href, children }) => {
+const FooterItem: FC<FooterBarProps> = ({ href, children }) => {
   return (
     <li>
       <a href={href} className={`py-4`}>
@@ -40,10 +38,10 @@ const FooterItem: FC<FooterItemProps> = ({ href, children }) => {
 export const Footer: FC = () => {
   return (
     <FooterBar href="/">
-      <FooterItem href="/Smm">Smm</FooterItem>
-      <FooterItem href="/Design">Design</FooterItem>
-      <FooterItem href="/Code">Code</FooterItem>
-      <FooterItem href="/Photos">Photos</FooterItem>
+      <FooterItem href="/smm">Smm</FooterItem>
+      <FooterItem href="/design">Design</FooterItem>
+      <FooterItem href="/code">Code</FooterItem>
+      <FooterItem href="/photos">Photos</FooterItem>
     </FooterBar>
   )
 }

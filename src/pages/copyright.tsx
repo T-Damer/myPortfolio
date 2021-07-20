@@ -1,8 +1,6 @@
 import { gradientText } from 'components/Text'
-import Card from 'components/Card'
-import { render } from 'react-dom'
 
-export default function Code() {
+export default function CopyrightPage() {
   return (
     <div
       className="flex

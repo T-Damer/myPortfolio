@@ -17,6 +17,7 @@ export default function Design() {
           (Description-Problem-Solution-Reason), also there is links, related to
           project
         </p>
+        <Card></Card>
       </div>
     </div>
   )
