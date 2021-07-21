@@ -8,7 +8,7 @@ export const gradientText = classnames(
   'flex',
   'font-sans',
   'text-xl',
-  'md:text-2xl',
+  'md:text-3xl',
   'font-bold',
   'bg-clip-text',
   'text-transparent',

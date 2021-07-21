@@ -7,6 +7,8 @@ import Design from 'pages/design'
 import Code from 'pages/code'
 import Photos from 'pages/photos'
 import CopyrightPage from 'pages/copyright'
+import Page404 from 'pages/page404'
+import NotFound from 'pages/notFound'
 
 export default function SiteRouter() {
   return (
@@ -29,6 +31,12 @@ export default function SiteRouter() {
         </Route>
         <Route path="/copyright">
           <CopyrightPage />
+        </Route>
+        <Route exact path="/404">
+          <Page404 />
+        </Route>
+        <Route path="*">
+          <NotFound />
         </Route>
       </Switch>
     </Router>
