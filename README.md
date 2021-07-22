@@ -13,3 +13,5 @@
 ## Figma source project
 
 [Check this dashboard](https://www.figma.com/file/8BlqrbL7lIE6O5xX3EGuem/DamerPortfolio?node-id=0%3A1)
+
+<a href="https://www.buymeacoffee.com/tdamer"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=tdamer&button_colour=5F7FFF&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"></a>
