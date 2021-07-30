@@ -11,7 +11,10 @@ export default function Home() {
     >
       <div className="glassWrapper flex-col md:flex-row">
         <div className="flex flex-grow p-5">
-          <img src="/assets/Z1012533_grey_insphere.gif" alt="Daniil Pankov" />
+          <img
+            src="/myPortfolio/assets/Z1012533_grey_insphere.gif"
+            alt="Daniil Pankov"
+          />
         </div>
 
         <div className="flex-column items-start">

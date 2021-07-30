@@ -39,11 +39,11 @@ const FooterItem: FC<FooterBarProps> = ({ href, children }) => {
 
 export const Footer: FC = () => {
   return (
-    <FooterBar href="/">
-      <FooterItem href="/smm">Smm</FooterItem>
-      <FooterItem href="/design">Design</FooterItem>
-      <FooterItem href="/code">Code</FooterItem>
-      <FooterItem href="/photos">Photos</FooterItem>
+    <FooterBar href="/myPortfolio">
+      <FooterItem href="/myPortfolio/smm">Smm</FooterItem>
+      <FooterItem href="/myPortfolio/design">Design</FooterItem>
+      <FooterItem href="/myPortfolio/code">Code</FooterItem>
+      <FooterItem href="/myPortfolio/photos">Photos</FooterItem>
     </FooterBar>
   )
 }

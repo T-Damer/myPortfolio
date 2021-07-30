@@ -12,7 +12,7 @@ import NotFound from 'pages/notFound'
 
 export default function SiteRouter() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/">
           <Home />

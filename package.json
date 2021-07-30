@@ -1,5 +1,6 @@
 {
-  "name": "frontend-starter-react",
+  "homepage": "https://t-damer.github.io/myPortfolio/",
+  "name": "t-damer-portfolio",
   "version": "1.0.0",
   "private": false,
   "license": "MIT",
@@ -21,10 +22,11 @@
   },
   "scripts": {
     "start": "cross-env BROWSER=none craco start",
-    "build": "cross-env NODE_ENV=production BUILD_PATH='./build' craco build",
+    "build": "cross-env NODE_ENV=production BUILD_PATH='./docs' craco build",
     "generate-css-types": "tailwindcss-classnames -o src/classnames/tailwind.ts",
     "prestart": "yarn generate-css-types",
     "prebuild": "yarn generate-css-types",
+    "deploy": "gh-pages -d docs",
     "update": "yarn build && git add . && git commit -m 'update' && git push"
   },
   "eslintConfig": {
@@ -55,6 +57,7 @@
     "@types/react-router-dom": "^5.1.8",
     "autoprefixer": "^9",
     "cross-env": "7.0.3",
+    "gh-pages": "^3.2.3",
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "typescript": "^4.3.5"

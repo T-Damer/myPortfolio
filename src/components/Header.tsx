@@ -35,11 +35,11 @@ const NavItem: FC<NavBarProps> = ({ href, children }) => {
 
 export const Nav: FC = () => {
   return (
-    <NavBar href="/">
-      <NavItem href="/smm">Smm</NavItem>
-      <NavItem href="/design">Design</NavItem>
-      <NavItem href="/code">Code</NavItem>
-      <NavItem href="/photos">Photos</NavItem>
+    <NavBar href="/myPortfolio">
+      <NavItem href="/myPortfolio/smm">Smm</NavItem>
+      <NavItem href="/myPortfolio/design">Design</NavItem>
+      <NavItem href="/myPortfolio/code">Code</NavItem>
+      <NavItem href="/myPortfolio/photos">Photos</NavItem>
     </NavBar>
   )
 }
