@@ -39,7 +39,7 @@ const FooterItem: FC<FooterBarProps> = ({ href, children }) => {
 
 export const Footer: FC = () => {
   return (
-    <FooterBar href="/myPortfolio">
+    <FooterBar href="/myPortfolio/">
       <FooterItem href="/myPortfolio/smm">Smm</FooterItem>
       <FooterItem href="/myPortfolio/design">Design</FooterItem>
       <FooterItem href="/myPortfolio/code">Code</FooterItem>
