@@ -3,7 +3,7 @@ import Card from 'components/Card'
 import ImageGallery from 'react-image-gallery'
 import { Component } from 'react'
 
-const PREFIX_URL = 'myPortfolio/images/design'
+const PREFIX_URL = '/myPortfolio/images/design'
 
 const pazlCoImages = [
   {
