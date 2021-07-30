@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { greyGradientText } from 'components/Text'
+import { Link } from 'react-router-dom'
 
 type FooterBarProps = {
   href: string
@@ -30,20 +31,20 @@ const FooterBar: FC<FooterBarProps> = ({ href, children }) => {
 const FooterItem: FC<FooterBarProps> = ({ href, children }) => {
   return (
     <li>
-      <a href={href} className={`py-4`}>
+      <Link to={href} className={`py-4`}>
         {children}
-      </a>
+      </Link>
     </li>
   )
 }
 
 export const Footer: FC = () => {
   return (
-    <FooterBar href="/myPortfolio/">
-      <FooterItem href="/myPortfolio/smm">Smm</FooterItem>
-      <FooterItem href="/myPortfolio/design">Design</FooterItem>
-      <FooterItem href="/myPortfolio/code">Code</FooterItem>
-      <FooterItem href="/myPortfolio/photos">Photos</FooterItem>
+    <FooterBar href="/">
+      <FooterItem href="/smm">Smm</FooterItem>
+      <FooterItem href="/design">Design</FooterItem>
+      <FooterItem href="/code">Code</FooterItem>
+      <FooterItem href="/photos">Photos</FooterItem>
     </FooterBar>
   )
 }

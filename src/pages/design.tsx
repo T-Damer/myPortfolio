@@ -1,8 +1,9 @@
 import { gradientText } from 'components/Text'
 import Card from 'components/Card'
 import ImageGallery from 'react-image-gallery'
+import { Component } from 'react'
 
-const PREFIX_URL = 'images/design'
+const PREFIX_URL = 'myPortfolio/images/design'
 
 const anatomyImages = [
   {
@@ -91,111 +92,116 @@ const vgmuImages = [
   },
 ]
 
-export default function Design() {
-  return (
-    <div
-      className="flex
+class Design extends Component {
+  render() {
+    return (
+      <div
+        className="flex
     flex-grow
     items-center
     p-1 flex-col space-y-6"
-    >
-      <div className="glassWrapper flex-col justify-start space-y-6">
-        <h2 className={gradientText}>Design: </h2>
-        <p className="text-white px-5">
-          Hello, this is design section, here you can find most of my design
-          projects. I really like make something, that looks interesting and
-          outstanding ⭐️
-        </p>
-        <Card>
-          <div>
-            <h3 className={gradientText}>Anatomy contest</h3>
-            <p className="text-white py-4 px-5">
-              Once upon a time I was taking part in anatomy contest. The
-              contestants had to prepare a poster on the history of anatomy.
-              Naturally I chose Leonardo da Vinci and my favorite color
-              combination. The print cost a lot back then, heh
-            </p>
-          </div>
-          <div className="rounded-lg p-5">
-            <ImageGallery
-              items={anatomyImages}
-              lazyLoad
-              showThumbnails={false}
-              showPlayButton={false}
-            />
-          </div>
-        </Card>
+      >
+        <div className="glassWrapper flex-col justify-start space-y-6">
+          <h2 className={gradientText}>Design: </h2>
+          <p className="text-white px-5">
+            Hello, this is design section, here you can find most of my design
+            projects. I really like make something, that looks interesting and
+            outstanding ⭐️
+          </p>
+          <Card>
+            <div>
+              <h3 className={gradientText}>Anatomy contest</h3>
+              <p className="text-white py-4 px-5">
+                Once upon a time I was taking part in anatomy contest. The
+                contestants had to prepare a poster on the history of anatomy.
+                Naturally I chose Leonardo da Vinci and my favorite color
+                combination. The print cost a lot back then, heh
+              </p>
+            </div>
+            <div className="rounded-lg p-5">
+              <ImageGallery
+                items={anatomyImages}
+                lazyLoad
+                showThumbnails={false}
+                showPlayButton={false}
+              />
+            </div>
+          </Card>
 
-        <Card>
-          <div>
-            <h3 className={gradientText}>Online page design</h3>
-            <p className="text-white py-4 px-5">
-              You know, that I was working in{' '}
-              <a href="https://vk.com/aiesec_vrn" className="text-yellow-300">
-                AIESEC Voronezh
-              </a>
-              . There was a little local competition between members. The
-              essence of the competition was to make a new logo for the online
-              page, I offered 8 options and one of them won, although now there
-              is already a new logo :)
-            </p>
-          </div>
-          <div className="rounded-lg p-5">
-            <ImageGallery
-              items={AIESEClogos}
-              lazyLoad
-              showThumbnails={false}
-              showPlayButton={false}
-            />
-          </div>
-        </Card>
+          <Card>
+            <div>
+              <h3 className={gradientText}>Online page design</h3>
+              <p className="text-white py-4 px-5">
+                You know, that I was working in{' '}
+                <a href="https://vk.com/aiesec_vrn" className="text-yellow-300">
+                  AIESEC Voronezh
+                </a>
+                . There was a little local competition between members. The
+                essence of the competition was to make a new logo for the online
+                page, I offered 8 options and one of them won, although now
+                there is already a new logo :)
+              </p>
+            </div>
+            <div className="rounded-lg p-5">
+              <ImageGallery
+                items={AIESEClogos}
+                lazyLoad
+                showThumbnails={false}
+                showPlayButton={false}
+              />
+            </div>
+          </Card>
 
-        <Card>
-          <div>
-            <h3 className={gradientText}>Conference design</h3>
-            <p className="text-white py-4 px-5">
-              Back to{' '}
-              <a href="https://vk.com/aiesec_vrn" className="text-yellow-300">
-                AIESEC Voronezh
-              </a>{' '}
-              again. Back in 2020, when I applied for higher education we had a
-              conference called PAZL'CO (PUZZLE but on Russian spelling, heh). I
-              was leading designer, editor of an online page and also event
-              organizer. As a designer I did: design for blog posts, design of
-              presentations, brochures, certificates, videos, personal
-              invitations also i came up with a logo of our conference.
-            </p>
-          </div>
-          <div className="rounded-lg p-5">
-            <ImageGallery
-              items={pazlCoImages}
-              lazyLoad
-              showThumbnails={false}
-              showPlayButton={false}
-            />
-          </div>
-        </Card>
+          <Card>
+            <div>
+              <h3 className={gradientText}>Conference design</h3>
+              <p className="text-white py-4 px-5">
+                Back to{' '}
+                <a href="https://vk.com/aiesec_vrn" className="text-yellow-300">
+                  AIESEC Voronezh
+                </a>{' '}
+                again. Back in 2020, when I applied for higher education we had
+                a conference called PAZL'CO (PUZZLE but on Russian spelling,
+                heh). I was leading designer, editor of an online page and also
+                event organizer. As a designer I did: design for blog posts,
+                design of presentations, brochures, certificates, videos,
+                personal invitations also i came up with a logo of our
+                conference.
+              </p>
+            </div>
+            <div className="rounded-lg p-5">
+              <ImageGallery
+                items={pazlCoImages}
+                lazyLoad
+                showThumbnails={false}
+                showPlayButton={false}
+              />
+            </div>
+          </Card>
 
-        <Card>
-          <div>
-            <h3 className={gradientText}>University Activist</h3>
-            <p className="text-white py-4 px-5">
-              So, I went to medical school (don't ask why). For a student, we
-              have a lot of additional activities (as if the load is not enough,
-              ha-ha), so I made several designs for the circles, and I and my
-              comrades also shot a short film for the competition
-            </p>
-          </div>
-          <div className="rounded-lg p-5">
-            <ImageGallery
-              items={vgmuImages}
-              lazyLoad
-              showThumbnails={false}
-              showPlayButton={false}
-            />
-          </div>
-        </Card>
+          <Card>
+            <div>
+              <h3 className={gradientText}>University Activist</h3>
+              <p className="text-white py-4 px-5">
+                So, I went to medical school (don't ask why). For a student, we
+                have a lot of additional activities (as if the load is not
+                enough, ha-ha), so I made several designs for the circles, and I
+                and my comrades also shot a short film for the competition
+              </p>
+            </div>
+            <div className="rounded-lg p-5">
+              <ImageGallery
+                items={vgmuImages}
+                lazyLoad
+                showThumbnails={false}
+                showPlayButton={false}
+              />
+            </div>
+          </Card>
+        </div>
       </div>
-    </div>
-  )
+    )
+  }
 }
+
+export default Design
