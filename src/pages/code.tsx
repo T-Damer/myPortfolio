@@ -11,12 +11,63 @@ export default function Code() {
     >
       <div className="glassWrapper flex-col justify-start space-y-6">
         <h2 className={gradientText}>Code: </h2>
-        <p className="text-white">
+        <p className="text-white px-5">
           Hello, this is code section, here you can find all my code projects
           imported from <a href="https://github.com/T-Damer">GitHub</a>. All
           projects listed in DPSR (Description-Problem-Solution-Reason), also
           there is links, related to project
         </p>
+        <Card>
+          <div>
+            <h3 className={gradientText}>project_manager</h3>
+            <p className="text-white py-2">
+              <span className="text-white font-bold">Description:</span> Simple
+              project_manager, you can login and add your projects, also see
+              other's project. Build with TS+React+Redux+Firebase
+            </p>
+            <p className="text-white py-2">
+              <span className="text-white font-bold">Problem: </span> We have
+              many databases, I decided to test firebase with Redux, also
+              connected TypeScript
+            </p>
+            <p className="text-white py-2">
+              <span className="text-white font-bold">Solution: </span> A good
+              decision was to use TypeScript, it really facilitated the task.
+              Redux is pretty flexible, so I choose it instead of mobx, also
+              it's really good to use with firebase, because we have packages
+              that make the task easier
+            </p>
+            <p className="text-white py-2">
+              <span className="text-white font-bold">Reason: </span> As we know,
+              we can host our web-site using firebase, also it's really friendly
+              to new developers, we can set rules and create collection really
+              fast. Redux helped with it's different actions, that we can create
+              from zero
+            </p>
+            <p className="text-white font-bold py-2">Links:</p>
+            <ul className="text-white list-disc px-10">
+              <li>
+                <a href="https://github.com/T-Damer/project_manager_public">
+                  Github
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/T-Damer/project_manager_public/releases/tag/1.0.0">
+                  Packages
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://insta-clone-react-62357.web.app/"
+                  className="text-yellow-300"
+                >
+                  Hosted here
+                </a>
+              </li>
+            </ul>
+          </div>
+        </Card>
+
         <Card>
           <div>
             <h3 className={gradientText}>py-qt-yt-downloader</h3>
