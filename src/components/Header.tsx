@@ -33,7 +33,7 @@ const NavItem: FC<NavBarProps> = ({ href, children }) => {
 
 export const Nav: FC = () => {
   return (
-    <NavBar href="/">
+    <NavBar href="/myPortfolio">
       <NavItem href="/smm">Smm</NavItem>
       <NavItem href="/design">Design</NavItem>
       <NavItem href="/code">Code</NavItem>
