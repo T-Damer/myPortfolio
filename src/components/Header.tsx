@@ -9,14 +9,14 @@ type NavBarProps = {
 const NavBar: FC<NavBarProps> = ({ href, children }) => {
   return (
     <Router>
-      <nav className="glassWrapper w-8/12">
-        <div className="justify-start px-10">
+      <nav className="glassWrapper w-8/12 flex-col md:flex-row">
+        <div className="logoWrapper">
           <a href={href} className={gradientText}>
             T.DaM∑R Portfolio
           </a>
         </div>
         <div className="flex-grow">
-          <ul className="flex flex-row items-center justify-end space-x-10 px-10 text-white">
+          <ul className="flex flex-row items-center justify-center md:justify-end space-x-4 md:space-x-10 md:px-10 text-white">
             {children}
           </ul>
         </div>
