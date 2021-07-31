@@ -14,13 +14,58 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.3rem;
-  background-color: #000000;
-  background-image: radial-gradient(
-      at 47% 33%,
-      hsl(60, 0%, 0%) 0,
-      transparent 59%
-    ),
-    radial-gradient(at 82% 65%, hsl(45, 100%, 60%) 0, transparent 55%);
+  background: linear-gradient(307deg, #424242, #000000);
+  background-size: 400% 400%;
+
+  -webkit-animation: bg-gradient 22s ease infinite;
+  -moz-animation: bg-gradient 22s ease infinite;
+  -o-animation: bg-gradient 22s ease infinite;
+  animation: bg-gradient 22s ease infinite;
+}
+
+@-webkit-keyframes bg-gradient {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+@-moz-keyframes bg-gradient {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+@-o-keyframes bg-gradient {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+@keyframes bg-gradient {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
 }
 
 img {
