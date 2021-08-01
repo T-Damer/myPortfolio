@@ -17,8 +17,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "tailwindcss-classnames": "^2.2.1",
-    "unfetch": "^4.2.0",
-    "vanilla-tilt": "^1.7.0"
+    "unfetch": "^4.2.0"
   },
   "scripts": {
     "start": "cross-env BROWSER=none craco start",

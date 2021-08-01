@@ -6,6 +6,7 @@ import { configure } from 'mobx'
 import { Route, Switch } from 'react-router-dom'
 
 // Pages
+import Socials from 'pages/socials'
 import Home from 'pages/home'
 import Smm from 'pages/smm'
 import Design from 'pages/design'
@@ -34,6 +35,7 @@ const App = () => {
           <Route exact path="/404" component={Page404} />
           <Route path="*" component={NotFound} />
         </Switch>
+        <Socials />
         <Footer />
       </IntlProvider>
     </Root>

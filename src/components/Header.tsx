@@ -8,7 +8,7 @@ type NavBarProps = {
 
 const NavBar: FC<NavBarProps> = ({ href, children }) => {
   return (
-    <nav className="glassWrapper w-8/12 flex-col md:flex-row">
+    <nav className="glassWrapper w-8/12 flex-col lg:flex-row">
       <div className="logoWrapper">
         <a href={href} className={gradientText}>
           T.DaM∑R Portfolio
