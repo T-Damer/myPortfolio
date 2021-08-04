@@ -14,7 +14,7 @@ class Home extends Component {
         <div className="glassWrapper flex-col xl:flex-row">
           <div className="flex flex-grow p-5">
             <img
-              src="/myPortfolio/assets/Z1012533_grey_insphere.gif"
+              src="/myPortfolio/images/photos/myAvatars/1.png"
               alt="Daniil Pankov"
             />
           </div>

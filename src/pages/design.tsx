@@ -9,9 +9,6 @@ const anatomyImages = [
   {
     original: `${PREFIX_URL}/anatomyContest/FinalCut1.png`,
   },
-  {
-    original: `${PREFIX_URL}/anatomyContest/FinalCut2.png`,
-  },
 ]
 
 const AIESEClogos = [

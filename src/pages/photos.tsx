@@ -15,9 +15,6 @@ const myAvatars = [
   {
     original: `${PREFIX_URL}/myAvatars/3.png`,
   },
-  {
-    original: `${PREFIX_URL}/myAvatars/4.png`,
-  },
 ]
 
 const magicWorkshop = [
