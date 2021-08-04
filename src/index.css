@@ -125,7 +125,7 @@ a:hover {
     rgba(255, 255, 255, 0.3) 0%,
     rgba(255, 255, 255, 0) 100%
   );
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
   box-shadow: 17px 21px 36px 4px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(4px);
   border-radius: 2rem;
@@ -156,7 +156,7 @@ a:hover {
       rgba(255, 255, 255, 0.3) 0%,
       rgba(255, 255, 255, 0) 100%
     );
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
     box-shadow: 17px 21px 36px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(4px);
     border-radius: 2rem;
@@ -177,7 +177,7 @@ a:hover {
     rgba(255, 255, 255, 0.3) 0%,
     rgba(255, 255, 255, 0) 100%
   );
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
   box-shadow: 17px 21px 36px 4px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(4px);
   border-radius: 2rem 2rem 0px 0px;
@@ -198,7 +198,7 @@ a:hover {
       rgba(255, 255, 255, 0.3) 0%,
       rgba(255, 255, 255, 0) 100%
     );
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
     box-shadow: 17px 21px 36px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(4px);
     border-radius: 2rem 2rem 0px 0px;
@@ -213,7 +213,7 @@ a:hover {
   -webkit-backdrop-filter: blur(16px) saturate(181%);
   background-color: rgba(84, 84, 84, 0);
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.125);
+  /* border: 1px solid rgba(255, 255, 255, 0.125); */
   -webkit-box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
   box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
   padding: 1rem;
