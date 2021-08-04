@@ -10,6 +10,7 @@ class Socials extends Component {
             <img
               src="https://cdn.iconscout.com/icon/free/png-256/developer-tool-1889494-1597554.png"
               alt="GitHub"
+              className="heartbeat"
             />
           </a>
         </SocialLink>
@@ -19,6 +20,7 @@ class Socials extends Component {
             <img
               src="https://static.cdnlogo.com/logos/t/96/twitter-icon.svg"
               alt="Twitter"
+              className="heartbeat"
             />
           </a>
         </SocialLink>
@@ -28,6 +30,7 @@ class Socials extends Component {
             <img
               src="https://image.flaticon.com/icons/png/512/906/906361.png"
               alt="Discord"
+              className="heartbeat"
             />
           </a>
         </SocialLink>
@@ -37,6 +40,7 @@ class Socials extends Component {
             <img
               src="https://img.icons8.com/color/480/000000/linkedin-circled--v1.png"
               alt="LinkedIn"
+              className="heartbeat"
             />
           </a>
         </SocialLink>
@@ -46,7 +50,7 @@ class Socials extends Component {
             <img
               src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-256.png"
               alt="Instagram"
-              className="align-center justify-center"
+              className="heartbeat align-center justify-center"
             />
           </a>
         </SocialLink>
