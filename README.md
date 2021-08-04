@@ -1,3 +1,5 @@
+![android-chrome-512x512](https://user-images.githubusercontent.com/49658988/128247778-7251440a-8a25-476b-8537-3be5c296045a.png)
+
 ## Demo
 
 ![Color Matte_2](https://user-images.githubusercontent.com/49658988/126047158-4d107823-54d2-4af3-b1c4-0e8347c8b681.gif)
