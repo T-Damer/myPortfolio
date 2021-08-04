@@ -11,7 +11,7 @@ class Home extends Component {
     items-center
     p-1 flex-col space-y-6"
       >
-        <div className="glassWrapper flex-col md:flex-row">
+        <div className="glassWrapper flex-col xl:flex-row">
           <div className="flex flex-grow p-5">
             <img
               src="/myPortfolio/assets/Z1012533_grey_insphere.gif"

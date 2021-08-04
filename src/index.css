@@ -23,6 +23,16 @@ body {
   animation: bg-gradient 22s ease infinite;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a:hover {
+  color: #ffcc33;
+  text-decoration: underline dotted;
+}
+
 /*=== Scrollbar ===*/
 ::-webkit-scrollbar {
   width: 10px;
@@ -83,9 +93,8 @@ body {
   }
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.navbar__item:hover {
+  color: #ffcc33;
 }
 
 .background {
@@ -120,6 +129,18 @@ img {
   box-shadow: 17px 21px 36px 4px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(4px);
   border-radius: 2rem;
+  animation: pageLoadAnim 1s;
+}
+
+@keyframes pageLoadAnim {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (min-width: 770px) {
@@ -139,6 +160,7 @@ img {
     box-shadow: 17px 21px 36px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(4px);
     border-radius: 2rem;
+    animation: pageLoadAnim 1s;
   }
 }
 
@@ -160,6 +182,10 @@ img {
   backdrop-filter: blur(4px);
   border-radius: 2rem 2rem 0px 0px;
   padding: 2rem 0rem;
+}
+
+.footer__item:hover {
+  color: #ffcc33;
 }
 
 @media (min-width: 770px) {
@@ -188,7 +214,10 @@ img {
   background-color: rgba(84, 84, 84, 0);
   border-radius: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.125);
+  -webkit-box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+  box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
   padding: 1rem;
+  animation: pageLoadAnim 0.5s;
 }
 
 /*=== .card, img {socials} animation ===*/
@@ -263,33 +292,5 @@ img {
     transform: scale(1);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
-  }
-}
-
-/*=== Card Animation ===*/
-
-.card:hover {
-  -webkit-animation: card 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: card 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-@-webkit-keyframes card {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  }
-  100% {
-    -webkit-box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
-    box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
-  }
-}
-@keyframes card {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  }
-  100% {
-    -webkit-box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
-    box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
   }
 }

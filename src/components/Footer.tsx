@@ -12,7 +12,9 @@ const FooterBar: FC<FooterBarProps> = ({ href, children }) => {
       <div className="flex flex-row flex-grow items-center justify-center py-2 md:px-10 md:divide-x-4 md:divide-grey-500">
         <div className="flex flex-col flex-grow items-end justify-center px-10">
           <Link to="/copyright">
-            <p className="text-center text-white my-5">Copyright &copy; 2021</p>
+            <p className="text-center text-white my-5 hover:text-yellow-300">
+              Copyright &copy; 2021
+            </p>
           </Link>
           <a href={href} className={`${greyGradientText} text-xl`}>
             <p>T.DaM∑R Portfolio</p>
@@ -30,7 +32,7 @@ const FooterBar: FC<FooterBarProps> = ({ href, children }) => {
 
 const FooterItem: FC<FooterBarProps> = ({ href, children }) => {
   return (
-    <li>
+    <li className="footer__item">
       <Link to={href} className={`py-4`}>
         {children}
       </Link>
