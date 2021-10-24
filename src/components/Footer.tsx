@@ -1,21 +1,24 @@
 import { FC } from 'react'
 import { greyGradientText } from 'components/Text'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+import { classnames } from 'classnames/tailwind'
 
 type FooterBarProps = {
   href: string
 }
+
+const footerLinkActive = classnames('text-yellow-400')
 
 const FooterBar: FC<FooterBarProps> = ({ href, children }) => {
   return (
     <footer className="bottomwrapper">
       <div className="flex flex-row flex-grow items-center justify-center py-2 md:px-10 md:divide-x-4 md:divide-grey-500">
         <div className="flex flex-col flex-grow items-end justify-center px-10">
-          <Link to="/copyright">
+          <NavLink to="/copyright" activeClassName={footerLinkActive}>
             <p className="text-center text-white my-5 hover:text-yellow-300">
               Copyright &copy; 2021
             </p>
-          </Link>
+          </NavLink>
           <a href={href} className={`${greyGradientText} text-xl`}>
             <p>T.DaM∑R Portfolio</p>
           </a>
@@ -33,9 +36,9 @@ const FooterBar: FC<FooterBarProps> = ({ href, children }) => {
 const FooterItem: FC<FooterBarProps> = ({ href, children }) => {
   return (
     <li className="footer__item">
-      <Link to={href} className={`py-4`}>
+      <NavLink to={href} activeClassName={footerLinkActive} className={`py-4`}>
         {children}
-      </Link>
+      </NavLink>
     </li>
   )
 }

@@ -94,10 +94,6 @@ a:hover {
   }
 }
 
-.navbar__item:hover {
-  color: #ffcc33;
-}
-
 .background {
   position: absolute;
   display: block;

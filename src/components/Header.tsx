@@ -1,10 +1,13 @@
 import { FC } from 'react'
 import { gradientText } from 'components/Text'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+import { classnames } from 'classnames/tailwind'
 
 type NavBarProps = {
   href: string
 }
+
+const navLinkSelected = classnames('text-yellow-400')
 
 const NavBar: FC<NavBarProps> = ({ href, children }) => {
   return (
@@ -26,7 +29,9 @@ const NavBar: FC<NavBarProps> = ({ href, children }) => {
 const NavItem: FC<NavBarProps> = ({ href, children }) => {
   return (
     <li className="navbar__item">
-      <Link to={href}>{children}</Link>
+      <NavLink to={href} activeClassName={navLinkSelected}>
+        {children}
+      </NavLink>
     </li>
   )
 }
