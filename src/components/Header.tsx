@@ -2,12 +2,24 @@ import { FC } from 'react'
 import { gradientText } from 'components/Text'
 import { NavLink } from 'react-router-dom'
 import { classnames } from 'classnames/tailwind'
+import { FormattedMessage } from 'react-intl'
 
 type NavBarProps = {
   href: string
 }
 
 const navLinkSelected = classnames('text-yellow-400')
+const navUl = classnames(
+  'flex',
+  'flex-row',
+  'items-center',
+  'justify-center',
+  'md:justify-end',
+  'space-x-4',
+  'md:space-x-10',
+  'md:px-10',
+  'text-white'
+)
 
 const NavBar: FC<NavBarProps> = ({ href, children }) => {
   return (
@@ -18,9 +30,7 @@ const NavBar: FC<NavBarProps> = ({ href, children }) => {
         </a>
       </div>
       <div className="flex-grow">
-        <ul className="flex flex-row items-center justify-center md:justify-end space-x-4 md:space-x-10 md:px-10 text-white">
-          {children}
-        </ul>
+        <ul className={navUl}>{children}</ul>
       </div>
     </nav>
   )
@@ -39,10 +49,15 @@ const NavItem: FC<NavBarProps> = ({ href, children }) => {
 export const Nav: FC = () => {
   return (
     <NavBar href="/myPortfolio">
-      <NavItem href="/smm">Smm</NavItem>
-      <NavItem href="/design">Design</NavItem>
-      <NavItem href="/code">Code</NavItem>
-      <NavItem href="/photos">Photos</NavItem>
+      <NavItem href="/design">
+        <FormattedMessage id="design" />
+      </NavItem>
+      <NavItem href="/code">
+        <FormattedMessage id="code" />
+      </NavItem>
+      <NavItem href="/photos">
+        <FormattedMessage id="photography" />
+      </NavItem>
     </NavBar>
   )
 }

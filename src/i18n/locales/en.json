@@ -1,3 +1,11 @@
 {
-  "title": "t-damer-portfolio"
+  "title": "t-damer-portfolio",
+  "main0": "Hello, my name is Daniil. I’ve mastered backend and frontend development, I am also good at design, photography and a little at SMM. You can check my works in related sections. \n I began as a designer and photographer, worked in AIESEC as a promoter on several forums and hosted the online event page. Soon I realized, that this is not enough to make a meaningful contribution to life, so I began to code.",
+  "main1": "Current Projects",
+  "fullname": "Daniil Pankov",
+  "code": "Code",
+  "design": "Design",
+  "photography": "Photos",
+  "photography1": "Hello, this is photography section, here you can find all my photos projects imported from ,",
+  "photography2": "others were stored locally and now you can enjoy them here. I like photography as a hobby, not something professional, enjoy 📸"
 }

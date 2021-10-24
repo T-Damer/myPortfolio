@@ -15,6 +15,7 @@ import Photos from 'pages/photos'
 import CopyrightPage from 'pages/copyright'
 import Page404 from 'pages/page404'
 import NotFound from 'pages/notFound'
+import LanguageButtons from 'components/LanguageButtons'
 
 configure({
   enforceActions: 'never',
@@ -25,6 +26,7 @@ const App = () => {
     <Root>
       <IntlProvider>
         <Nav />
+        <LanguageButtons />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/smm" component={Smm} />

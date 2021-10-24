@@ -2,6 +2,7 @@ import { gradientText } from 'components/Text'
 import Card from 'components/Card'
 import ImageGallery from 'react-image-gallery'
 import { Component } from 'react'
+import { FormattedMessage } from 'react-intl'
 
 const PREFIX_URL = '/myPortfolio/images/photos'
 
@@ -36,13 +37,18 @@ class Photos extends Component {
         p-1 flex-col space-y-6"
       >
         <div className="glassWrapper flex-col justify-start space-y-6">
-          <h2 className={gradientText}>Photography: </h2>
+          <h2 className={gradientText}>
+            <FormattedMessage id="photography" />:{' '}
+          </h2>
           <p className="text-white px-5">
-            Hello, this is photography section, here you can find all my code
-            projects imported from
-            <a href="https://www.instagram.com/t_damer/">Instagram</a>, others
-            were stored locally and now you can enjoy them here. I like
-            photography as a hobby, not something professional, enjoy 📸
+            <FormattedMessage id="photography1" />{' '}
+            <a
+              href="https://www.instagram.com/t_damer/"
+              className="text-yellow-400"
+            >
+              Instagram
+            </a>{' '}
+            <FormattedMessage id="photography2" />
           </p>
           <Card>
             <div>
