@@ -2,6 +2,7 @@ import { gradientText } from 'components/Text'
 import Card from 'components/Card'
 import ImageGallery from 'react-image-gallery'
 import { Component } from 'react'
+import { FormattedMessage } from 'react-intl'
 
 const PREFIX_URL = '/myPortfolio/images/design'
 
@@ -99,11 +100,11 @@ class Design extends Component {
     p-1 flex-col space-y-6"
       >
         <div className="glassWrapper flex-col justify-start space-y-6">
-          <h2 className={gradientText}>Design: </h2>
+          <h2 className={gradientText}>
+            <FormattedMessage id="design" />:{' '}
+          </h2>
           <p className="text-white px-5">
-            Hello, this is design section, here you can find most of my design
-            projects. I really like make something, that looks interesting and
-            outstanding ⭐️
+            <FormattedMessage id="design1" />
           </p>
           <Card>
             <div>

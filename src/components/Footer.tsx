@@ -2,6 +2,7 @@ import { FC } from 'react'
 import { greyGradientText } from 'components/Text'
 import { NavLink } from 'react-router-dom'
 import { classnames } from 'classnames/tailwind'
+import { FormattedMessage } from 'react-intl'
 
 type FooterBarProps = {
   href: string
@@ -46,10 +47,15 @@ const FooterItem: FC<FooterBarProps> = ({ href, children }) => {
 export const Footer: FC = () => {
   return (
     <FooterBar href="/myPortfolio">
-      <FooterItem href="/smm">Smm</FooterItem>
-      <FooterItem href="/design">Design</FooterItem>
-      <FooterItem href="/code">Code</FooterItem>
-      <FooterItem href="/photos">Photos</FooterItem>
+      <FooterItem href="/design">
+        <FormattedMessage id="design" />
+      </FooterItem>
+      <FooterItem href="/code">
+        <FormattedMessage id="code" />
+      </FooterItem>
+      <FooterItem href="/photos">
+        <FormattedMessage id="photography" />
+      </FooterItem>
     </FooterBar>
   )
 }

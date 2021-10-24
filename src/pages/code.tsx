@@ -1,6 +1,7 @@
 import { gradientText } from 'components/Text'
 import Card from 'components/Card'
 import { Component } from 'react'
+import { FormattedMessage } from 'react-intl'
 
 class Code extends Component {
   render() {
@@ -12,12 +13,13 @@ class Code extends Component {
     p-1 flex-col space-y-6"
       >
         <div className="glassWrapper flex-col justify-start space-y-6">
-          <h2 className={gradientText}>Code: </h2>
+          <h2 className={gradientText}>
+            <FormattedMessage id="code" />:{' '}
+          </h2>
           <p className="text-white px-5">
-            Hello, this is code section, here you can find all my code projects
-            imported from <a href="https://github.com/T-Damer">GitHub</a>. All
-            projects listed in DPSR (Description-Problem-Solution-Reason), also
-            there is links, related to project
+            <FormattedMessage id="code1" />{' '}
+            <a href="https://github.com/T-Damer">GitHub</a>
+            <FormattedMessage id="code2" />
           </p>
           <Card>
             <div>
