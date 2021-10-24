@@ -1,4 +1,4 @@
-![android-chrome-512x512](https://user-images.githubusercontent.com/49658988/128247778-7251440a-8a25-476b-8537-3be5c296045a.png)
+![android-chrome-512x512](public/assets/previewImage.png)
 
 ## Demo
 
@@ -14,7 +14,7 @@
 ## Available Scripts
 
 - `yarn start` — runs the app in the development mode
-- `yarn build` — builds the app for production to the `build` folder
+- `yarn deploy` — builds the app for production to the `docs` folder and deploys to branch `gh-pages`
 
 ## Figma source project
 
