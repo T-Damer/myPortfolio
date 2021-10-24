@@ -25,7 +25,7 @@
     "generate-css-types": "tailwindcss-classnames -o src/classnames/tailwind.ts",
     "prestart": "yarn generate-css-types",
     "prebuild": "yarn generate-css-types",
-    "deploy": "gh-pages -d docs",
+    "deploy": "yarn build && gh-pages -d docs",
     "update": "yarn build && git add . && git commit -m 'update' && git push"
   },
   "eslintConfig": {
