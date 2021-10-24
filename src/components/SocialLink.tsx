@@ -1,7 +1,7 @@
 import { FC } from 'react'
 
 const SocialLink: FC = ({ children }) => {
-  return <div className="card">{children}</div>
+  return <div className="card justify-center">{children}</div>
 }
 
 export default SocialLink
