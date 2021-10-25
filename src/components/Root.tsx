@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { classnames } from 'classnames/tailwind'
+import Stars from 'components/Stars'
 
 const root = classnames(
   'flex',
@@ -12,7 +13,12 @@ const root = classnames(
   'max-w-full'
 )
 const Root: FC = ({ children }) => {
-  return <div className={root}>{children}</div>
+  return (
+    <>
+      <Stars />
+      <div className={root}>{children}</div>
+    </>
+  )
 }
 
 export default Root
