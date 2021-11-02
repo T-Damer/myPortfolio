@@ -14,10 +14,22 @@ const icon = classnames(
   'h-6',
   'w-6'
 )
+
+const socialLinksBox = classnames(
+  'grid',
+  'grid-flow-row',
+  'md:grid-cols-5',
+  'xl:gap-3',
+  'gap-2',
+  'grid-cols-3',
+  'justify-center',
+  'items-center'
+)
+
 class Socials extends Component {
   render() {
     return (
-      <div className="glassWrapper grid row-auto grid-cols-3 2xl:grid-cols-5 gap-3 justify-center items-center">
+      <div className={`${socialLinksBox} glassWrapper-no-flex`}>
         <SocialLink>
           <a href="https://github.com/T-Damer">
             <svg
