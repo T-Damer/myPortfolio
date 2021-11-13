@@ -15,6 +15,7 @@
     "react-image-gallery": "^1.2.5",
     "react-intl": "^5.20.4",
     "react-lazyload": "^3.2.0",
+    "react-player": "^2.9.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "tailwindcss-classnames": "^2.2.1",

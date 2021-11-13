@@ -3,6 +3,7 @@ import Card from 'components/Card'
 import ImageGallery from 'react-image-gallery'
 import { Component } from 'react'
 import { FormattedMessage } from 'react-intl'
+import ReactPlayer from 'react-player'
 
 const PREFIX_URL = '/myPortfolio/images/design'
 
@@ -106,6 +107,23 @@ class Design extends Component {
           <p className="text-white px-5">
             <FormattedMessage id="design1" />
           </p>
+          <Card>
+            <div>
+              <h3 className={gradientText}>3D Coffee cup</h3>
+              <p className="text-white py-4 px-5">
+                I like 3D modeling and animation too, found interesting video on
+                YT and tried to replicate it)
+              </p>
+            </div>
+            <div className="flex rounded-lg p-5 items-center justify-center">
+              <ReactPlayer
+                url="https://user-images.githubusercontent.com/49658988/141644264-b0beedc6-8e93-4f81-9093-6e9e86172aa4.mp4"
+                loop={true}
+                playing={true}
+              />
+            </div>
+          </Card>
+
           <Card>
             <div>
               <h3 className={gradientText}>Anatomy contest</h3>
