@@ -120,6 +120,8 @@ class Design extends Component {
                 url="https://user-images.githubusercontent.com/49658988/141644264-b0beedc6-8e93-4f81-9093-6e9e86172aa4.mp4"
                 loop={true}
                 playing={true}
+                height="100%"
+                width="100%"
               />
             </div>
           </Card>
