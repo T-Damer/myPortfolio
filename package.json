@@ -6,6 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "@craco/craco": "^6.1.1",
+    "locomotive-scroll": "^4.1.3",
     "mobx": "^6.3.2",
     "mobx-persist-store": "^1.0.3",
     "mobx-react-lite": "^3.2.0",
@@ -15,6 +16,7 @@
     "react-image-gallery": "^1.2.5",
     "react-intl": "^5.20.4",
     "react-lazyload": "^3.2.0",
+    "react-locomotive-scroll": "^0.2.0",
     "react-player": "^2.9.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",

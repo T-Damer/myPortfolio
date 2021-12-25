@@ -4,6 +4,7 @@ import { Footer } from 'components/Footer'
 import IntlProvider from 'i18n/IntlProvider'
 import { configure } from 'mobx'
 import { Route, Switch } from 'react-router-dom'
+import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 
 // Pages
 import Socials from 'pages/socials'
@@ -23,24 +24,30 @@ configure({
 
 const App = () => {
   return (
-    <Root>
-      <IntlProvider>
-        <Nav />
-        <LanguageButtons />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/smm" component={Smm} />
-          <Route path="/design" component={Design} />
-          <Route path="/code" component={Code} />
-          <Route path="/photos" component={Photos} />
-          <Route path="/copyright" component={CopyrightPage} />
-          <Route exact path="/404" component={Page404} />
-          <Route path="*" component={NotFound} />
-        </Switch>
-        <Socials />
-        <Footer />
-      </IntlProvider>
-    </Root>
+    <LocomotiveScrollProvider
+      options={{
+        smooth: true,
+      }}
+    >
+      <Root>
+        <IntlProvider>
+          <Nav />
+          <LanguageButtons />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/smm" component={Smm} />
+            <Route path="/design" component={Design} />
+            <Route path="/code" component={Code} />
+            <Route path="/photos" component={Photos} />
+            <Route path="/copyright" component={CopyrightPage} />
+            <Route exact path="/404" component={Page404} />
+            <Route path="*" component={NotFound} />
+          </Switch>
+          <Socials />
+          <Footer />
+        </IntlProvider>
+      </Root>
+    </LocomotiveScrollProvider>
   )
 }
 

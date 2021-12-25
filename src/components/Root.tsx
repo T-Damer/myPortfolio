@@ -16,7 +16,9 @@ const Root: FC = ({ children }) => {
   return (
     <>
       <Stars />
-      <div className={root}>{children}</div>
+      <main className={root} data-scroll-container>
+        {children}
+      </main>
     </>
   )
 }
