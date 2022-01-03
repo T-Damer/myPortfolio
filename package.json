@@ -1,9 +1,13 @@
 {
   "name": "t-damer-portfolio",
   "homepage": "https://t-damer.github.io/myPortfolio",
+  "repository": "https://github.com/T-Damer/myPortfolio",
   "version": "1.0.0",
   "private": false,
   "license": "MIT",
+  "engines": {
+    "node": "^16.13.1"
+  },
   "dependencies": {
     "@craco/craco": "^6.1.1",
     "locomotive-scroll": "^4.1.3",

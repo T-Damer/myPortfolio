@@ -54,9 +54,7 @@ class Photos extends Component {
             <div>
               <h3 className={gradientText}>My avatars</h3>
               <p className="text-white py-4 px-5">
-                Basically, I began as a photographer, my first photoshop was my
-                user profile photo. I change my avatar when a cool idea comes
-                in, so there was many of them, take a look!
+                <FormattedMessage id="photography-avatars" />
               </p>
             </div>
             <div className="rounded-lg p-5">
@@ -73,7 +71,7 @@ class Photos extends Component {
             <div>
               <h3 className={gradientText}>Magic workshop</h3>
               <p className="text-white py-4 px-5">
-                Here i do my job, relax, chat
+                <FormattedMessage id="photography-workspace" />
               </p>
             </div>
             <div className="rounded-lg p-5">
