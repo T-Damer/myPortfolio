@@ -60,3 +60,20 @@ const bodyText = classnames(grayText, 'text-center')
 export const BodyText: FC = ({ children }) => {
   return <p className={bodyText}>{children}</p>
 }
+
+export const yellowText = classnames('text-yellow-400')
+
+const bigHeader = classnames('p-3', 'text-7xl')
+export const BigHeader: FC = ({ children }) => {
+  return <h1 className={bigHeader}>{children}</h1>
+}
+
+const paragraphWithPaddings = classnames(whiteText, 'py-4', 'px-5')
+export const ParagraphWithPaddings: FC = ({ children }) => {
+  return <p className={paragraphWithPaddings}>{children}</p>
+}
+
+const paragraphPX5 = classnames(whiteText, 'px-5')
+export const ParagraphPX5: FC = ({ children }) => {
+  return <p className={paragraphPX5}>{children}</p>
+}

@@ -1,9 +1,10 @@
-import { gradientText } from 'components/Text'
+import { gradientText, ParagraphWithPaddings } from 'components/Text'
 import Card from 'components/Card'
 import ImageGallery from 'react-image-gallery'
 import { Component } from 'react'
 import { FormattedMessage } from 'react-intl'
 import ReactPlayer from 'react-player'
+import { GalleryBox, sectionContainer } from 'components/SharedStyles'
 
 const PREFIX_URL = '/myPortfolio/images/design'
 
@@ -94,12 +95,7 @@ const vgmuImages = [
 class Design extends Component {
   render() {
     return (
-      <div
-        className="flex
-    flex-grow
-    items-center
-    p-1 flex-col space-y-6"
-      >
+      <div className={sectionContainer} data-scroll-container>
         <div className="glassWrapper flex-col justify-start space-y-6">
           <h2 className={gradientText}>
             <FormattedMessage id="design" />:{' '}
@@ -107,13 +103,13 @@ class Design extends Component {
           <p className="text-white px-5">
             <FormattedMessage id="design1" />
           </p>
-          <Card>
+          <Card data-scroll-section>
             <div>
               <h3 className={gradientText}>3D Coffee cup</h3>
-              <p className="text-white py-4 px-5">
+              <ParagraphWithPaddings>
                 I like 3D modeling and animation too, found interesting video on
                 YT and tried to replicate it)
-              </p>
+              </ParagraphWithPaddings>
             </div>
             <div className="flex rounded-lg p-5 items-center justify-center">
               <ReactPlayer
@@ -126,30 +122,30 @@ class Design extends Component {
             </div>
           </Card>
 
-          <Card>
+          <Card data-scroll-section>
             <div>
               <h3 className={gradientText}>Anatomy contest</h3>
-              <p className="text-white py-4 px-5">
+              <ParagraphWithPaddings>
                 Once upon a time I was taking part in anatomy contest. The
                 contestants had to prepare a poster on the history of anatomy.
                 Naturally I chose Leonardo da Vinci and my favorite color
                 combination. The print cost a lot back then, heh
-              </p>
+              </ParagraphWithPaddings>
             </div>
-            <div className="rounded-lg p-5">
+            <GalleryBox>
               <ImageGallery
                 items={anatomyImages}
                 lazyLoad
                 showThumbnails={false}
                 showPlayButton={false}
               />
-            </div>
+            </GalleryBox>
           </Card>
 
-          <Card>
+          <Card data-scroll-section>
             <div>
               <h3 className={gradientText}>Online page design</h3>
-              <p className="text-white py-4 px-5">
+              <ParagraphWithPaddings>
                 You know, that I was working in{' '}
                 <a href="https://vk.com/aiesec_vrn" className="text-yellow-300">
                   AIESEC Voronezh
@@ -158,22 +154,22 @@ class Design extends Component {
                 essence of the competition was to make a new logo for the online
                 page, I offered 8 options and one of them won, although now
                 there is already a new logo :)
-              </p>
+              </ParagraphWithPaddings>
             </div>
-            <div className="rounded-lg p-5">
+            <GalleryBox>
               <ImageGallery
                 items={AIESEClogos}
                 lazyLoad
                 showThumbnails={false}
                 showPlayButton={false}
               />
-            </div>
+            </GalleryBox>
           </Card>
 
-          <Card>
+          <Card data-scroll-section>
             <div>
               <h3 className={gradientText}>Conference design</h3>
-              <p className="text-white py-4 px-5">
+              <ParagraphWithPaddings>
                 Back to{' '}
                 <a href="https://vk.com/aiesec_vrn" className="text-yellow-300">
                   AIESEC Voronezh
@@ -185,36 +181,36 @@ class Design extends Component {
                 design of presentations, brochures, certificates, videos,
                 personal invitations also i came up with a logo of our
                 conference.
-              </p>
+              </ParagraphWithPaddings>
             </div>
-            <div className="rounded-lg p-5">
+            <GalleryBox>
               <ImageGallery
                 items={pazlCoImages}
                 lazyLoad
                 showThumbnails={false}
                 showPlayButton={false}
               />
-            </div>
+            </GalleryBox>
           </Card>
 
-          <Card>
+          <Card data-scroll-section>
             <div>
               <h3 className={gradientText}>University Activist</h3>
-              <p className="text-white py-4 px-5">
+              <ParagraphWithPaddings>
                 So, I went to medical school (don't ask why). For a student, we
                 have a lot of additional activities (as if the load is not
                 enough, ha-ha), so I made several designs for the circles, and I
                 and my comrades also shot a short film for the competition
-              </p>
+              </ParagraphWithPaddings>
             </div>
-            <div className="rounded-lg p-5">
+            <GalleryBox>
               <ImageGallery
                 items={vgmuImages}
                 lazyLoad
                 showThumbnails={false}
                 showPlayButton={false}
               />
-            </div>
+            </GalleryBox>
           </Card>
         </div>
       </div>

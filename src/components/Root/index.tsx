@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import { classnames } from 'classnames/tailwind'
 import Stars from 'components/Stars'
+import useRoot from 'components/Root/useRoot'
 
 const root = classnames(
   'flex',
@@ -12,11 +13,14 @@ const root = classnames(
   'mx-auto',
   'max-w-full'
 )
+
 const Root: FC = ({ children }) => {
+  const { rootRef } = useRoot()
+
   return (
     <>
       <Stars />
-      <main className={root} data-scroll-container>
+      <main className={root} data-scroll-container ref={rootRef}>
         {children}
       </main>
     </>
