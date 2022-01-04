@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { classnames } from 'classnames/tailwind'
 
-const whiteText = classnames('text-white', 'text-base')
+const whiteText = classnames('text-white', 'whitespace-pre-line')
 const grayText = classnames('text-gray-300')
 
 export const gradientText = classnames(
