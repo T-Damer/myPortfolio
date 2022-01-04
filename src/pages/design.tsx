@@ -1,4 +1,8 @@
-import { gradientText, ParagraphWithPaddings } from 'components/Text'
+import {
+  gradientText,
+  ParagraphWithPaddings,
+  yellowText,
+} from 'components/Text'
 import Card from 'components/Card'
 import ImageGallery from 'react-image-gallery'
 import { Component } from 'react'
@@ -107,8 +111,7 @@ class Design extends Component {
             <div>
               <h3 className={gradientText}>3D Coffee cup</h3>
               <ParagraphWithPaddings>
-                I like 3D modeling and animation too, found interesting video on
-                YT and tried to replicate it)
+                <FormattedMessage id="design-3dcup" />
               </ParagraphWithPaddings>
             </div>
             <div className="flex rounded-lg p-5 items-center justify-center">
@@ -126,10 +129,7 @@ class Design extends Component {
             <div>
               <h3 className={gradientText}>Anatomy contest</h3>
               <ParagraphWithPaddings>
-                Once upon a time I was taking part in anatomy contest. The
-                contestants had to prepare a poster on the history of anatomy.
-                Naturally I chose Leonardo da Vinci and my favorite color
-                combination. The print cost a lot back then, heh
+                <FormattedMessage id="design-anatomy-contest" />
               </ParagraphWithPaddings>
             </div>
             <GalleryBox>
@@ -146,14 +146,11 @@ class Design extends Component {
             <div>
               <h3 className={gradientText}>Online page design</h3>
               <ParagraphWithPaddings>
-                You know, that I was working in{' '}
-                <a href="https://vk.com/aiesec_vrn" className="text-yellow-300">
+                <FormattedMessage id="design-aiesec1" />
+                <a href="https://vk.com/aiesec_vrn" className={yellowText}>
                   AIESEC Voronezh
                 </a>
-                . There was a little local competition between members. The
-                essence of the competition was to make a new logo for the online
-                page, I offered 8 options and one of them won, although now
-                there is already a new logo :)
+                <FormattedMessage id="design-aiesec2" />
               </ParagraphWithPaddings>
             </div>
             <GalleryBox>
@@ -170,17 +167,11 @@ class Design extends Component {
             <div>
               <h3 className={gradientText}>Conference design</h3>
               <ParagraphWithPaddings>
-                Back to{' '}
-                <a href="https://vk.com/aiesec_vrn" className="text-yellow-300">
+                <FormattedMessage id="design-pazlco1" />
+                <a href="https://vk.com/aiesec_vrn" className={yellowText}>
                   AIESEC Voronezh
                 </a>{' '}
-                again. Back in 2020, when I applied for higher education we had
-                a conference called PAZL'CO (PUZZLE but on Russian spelling,
-                heh). I was leading designer, editor of an online page and also
-                event organizer. As a designer I did: design for blog posts,
-                design of presentations, brochures, certificates, videos,
-                personal invitations also i came up with a logo of our
-                conference.
+                <FormattedMessage id="design-pazlco2" />
               </ParagraphWithPaddings>
             </div>
             <GalleryBox>
@@ -197,10 +188,7 @@ class Design extends Component {
             <div>
               <h3 className={gradientText}>University Activist</h3>
               <ParagraphWithPaddings>
-                So, I went to medical school (don't ask why). For a student, we
-                have a lot of additional activities (as if the load is not
-                enough, ha-ha), so I made several designs for the circles, and I
-                and my comrades also shot a short film for the competition
+                <FormattedMessage id="design-uni-activist" />
               </ParagraphWithPaddings>
             </div>
             <GalleryBox>
